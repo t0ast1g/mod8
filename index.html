@@ -168,7 +168,7 @@
                     const verified = await verifyProgressSaved(true, event.data.score);
                     if (verified) {
                         showProgressStatus('Progress saved and verified successfully!');// Notify the game that the progress was saved
-                        const gameFrame = document.getElementById('module-4-frame');
+                        const gameFrame = document.getElementById('module-8-frame');
                         gameFrame.contentWindow.postMessage({ type: 'PROGRESS_SAVED', success: true }, event.origin);
                     } else {
                         showProgressStatus('Failed to verify progress save', true);
